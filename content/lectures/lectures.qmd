@@ -1,0 +1,28 @@
+---
+title: "Лекции"
+number-sections: false
+---
+
+::: callout-tip
+## Как смотреть лекции
+
+Презентации доступны для просмотра прямо на странице. Если PDF не отображается, откройте его в отдельной вкладке или скачайте.
+:::
+
+## Лекция 1. Современный ИИ
+
+<iframe src="lecture-01.pdf" title="Лекция 1. Современный ИИ" width="100%" height="600" loading="lazy"></iframe>
+
+[Открыть PDF](lecture-01.pdf){target="_blank"} · [Скачать PDF](lecture-01.pdf){download="lecture-01.pdf"}
+
+## Лекция 2. Технологии ИИ
+
+<iframe src="lecture-02.pdf" title="Лекция 2. Технологии ИИ" width="100%" height="600" loading="lazy"></iframe>
+
+[Открыть PDF](lecture-02.pdf){target="_blank"} · [Скачать PDF](lecture-02.pdf){download="lecture-02.pdf"}
+
+## Лекция 3. Перспективные методы ИИ
+
+<iframe src="lecture-03.pdf" title="Лекция 3. Перспективные методы ИИ" width="100%" height="600" loading="lazy"></iframe>
+
+[Открыть PDF](lecture-03.pdf){target="_blank"} · [Скачать PDF](lecture-03.pdf){download="lecture-03.pdf"}

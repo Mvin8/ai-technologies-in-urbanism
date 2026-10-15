@@ -1,18 +1,18 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - content/lectures/*.pdf
 
 website:
-  title: "Технологии ИИ в урбанистике"
+  title: "Технологии искусственного интеллекта в урбанистике"
   navbar:
     left:
-      - href: index.qmd
+      - href: content/index.qmd
         text: О курсе
-      - href: lectures.qmd
+      - href: content/lectures/lectures.qmd
         text: Лекции
       - sidebar:practice
-      - href: homework.qmd
-        text: Домашнее задание
   sidebar:
     - id: practice
       pinned: true
@@ -21,13 +21,7 @@ website:
       style: docked
       collapse-level: 2
       contents:
-        - start.qmd
-        - practice-01.qmd
-        - project.qmd
-        - practice-02.qmd
-        - practice-03.qmd
-        - practice-04.qmd
-        - practice-05.qmd
+        - content/practice/practice-01.qmd
 
 format:
   html:
