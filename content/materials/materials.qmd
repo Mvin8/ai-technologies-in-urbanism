@@ -24,6 +24,7 @@ anchor-sections: false
   <span class="preview-site">opencode.ai <span aria-hidden="true">↗</span></span>
   <h2 id="opencode-title">OpenCode</h2>
   <p id="opencode-description">ИИ-агент с открытым исходным кодом для работы над кодом в терминале, редакторе и приложении для компьютера.</p>
+  <img src="../../images/materials/opencode.png" alt="Обложка OpenCode: ИИ-агент с открытым исходным кодом" width="1280" height="721" loading="lazy">
   <span class="preview-footer">Работа с кодом <span>Открыть OpenCode →</span></span>
 </a>
 
@@ -31,6 +32,7 @@ anchor-sections: false
   <span class="preview-site">skills.sh <span aria-hidden="true">↗</span></span>
   <h2 id="skills-title">skills.sh</h2>
   <p id="skills-description">Каталог готовых навыков для ИИ-агентов: поиск и установка инструкций для выполнения специализированных задач.</p>
+  <img src="../../images/materials/skills.jpg" alt="Обложка skills.sh: каталог навыков для ИИ-агентов" width="2400" height="1256" loading="lazy">
   <span class="preview-footer">Навыки для агентов <span>Открыть каталог →</span></span>
 </a>
 
@@ -38,6 +40,15 @@ anchor-sections: false
   <span class="preview-site">chat.z.ai <span aria-hidden="true">↗</span></span>
   <h2 id="zai-title">Z.ai</h2>
   <p id="zai-description">Чат с ИИ на базе моделей GLM для вопросов и работы с текстом и кодом.</p>
+  <img src="../../images/materials/zai.png" alt="Логотип Z.ai и адрес chat.z.ai" width="1200" height="630" loading="lazy">
   <span class="preview-footer">Чат с ИИ <span>Открыть чат →</span></span>
+</a>
+
+<a class="resource-preview" href="https://huggingface.co/spaces/lmarena-ai/arena-leaderboard" target="_blank" rel="noopener noreferrer" aria-labelledby="arena-title" aria-describedby="arena-description">
+  <span class="preview-site">huggingface.co <span aria-hidden="true">↗</span></span>
+  <h2 id="arena-title">Arena Leaderboard</h2>
+  <p id="arena-description">Рейтинг языковых моделей LMArena для сравнения их результатов.</p>
+  <img src="../../images/materials/arena-leaderboard.png" alt="Превью Arena Leaderboard на Hugging Face" width="1200" height="648" loading="lazy">
+  <span class="preview-footer">Сравнение моделей <span>Открыть рейтинг →</span></span>
 </a>
 ```
