@@ -1,0 +1,6 @@
+defaults:
+  bootstrap:
+    defaults:
+      navbar-bg: "#0B68FE"
+      navbar-fg: white
+      navbar-hl: black

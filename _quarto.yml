@@ -1,0 +1,41 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Технологии ИИ в урбанистике"
+  navbar:
+    left:
+      - href: index.qmd
+        text: О курсе
+      - href: lectures.qmd
+        text: Лекции
+      - sidebar:practice
+      - href: homework.qmd
+        text: Домашнее задание
+  sidebar:
+    - id: practice
+      pinned: true
+      align: center
+      title: "Практикум"
+      style: docked
+      collapse-level: 2
+      contents:
+        - start.qmd
+        - practice-01.qmd
+        - project.qmd
+        - practice-02.qmd
+        - practice-03.qmd
+        - practice-04.qmd
+        - practice-05.qmd
+
+format:
+  html:
+    theme: flatly
+    css: styles.css
+    toc: true
+
+lang: ru-RU
+language: custom.yml
+editor: visual
+
