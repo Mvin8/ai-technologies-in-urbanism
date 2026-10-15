@@ -1,11 +1,11 @@
 ---
-title: "Материалы курса"
+title: "Дополнительные материалы"
 number-sections: false
 toc: false
 anchor-sections: false
 ---
 
-Статьи и наглядные объяснения, к которым можно обращаться во время курса и самостоятельной работы.
+Статьи, наглядные объяснения и полезные сервисы, к которым можно обращаться во время курса и самостоятельной работы.
 
 ```{=html}
 <a class="resource-preview" href="https://vas3k.blog/blog/machine_learning/" target="_blank" rel="noopener noreferrer" aria-labelledby="machine-learning-title" aria-describedby="machine-learning-description">
@@ -16,3 +16,9 @@ anchor-sections: false
   <span class="preview-footer">Вастрик <span>Читать статью →</span></span>
 </a>
 ```
+
+## Инструменты и сервисы
+
+- [OpenCode](https://opencode.ai/)
+- [skills.sh](https://www.skills.sh/)
+- [Z.ai](https://chat.z.ai/)

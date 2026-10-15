@@ -13,7 +13,7 @@ website:
         text: Лекции
       - sidebar:practice
       - href: content/materials/materials.qmd
-        text: Материалы курса
+        text: Дополнительные материалы
     right:
       - href: https://t.me/Mvin98
         icon: telegram
