@@ -1,18 +1,25 @@
 project:
   type: website
   output-dir: docs
-  resources:
-    - content/lectures/*.pdf
 
 website:
   title: "Технологии искусственного интеллекта в урбанистике"
   navbar:
+    title: "ИИ в урбанистике"
     left:
       - href: content/index.qmd
         text: О курсе
       - href: content/lectures/lectures.qmd
         text: Лекции
       - sidebar:practice
+      - href: content/materials/materials.qmd
+        text: Материалы курса
+    right:
+      - href: https://t.me/Mvin98
+        icon: telegram
+        aria-label: "Telegram Максима Натыкина"
+        target: _blank
+        rel: noopener
   sidebar:
     - id: practice
       pinned: true

@@ -1,0 +1,18 @@
+---
+title: "Материалы курса"
+number-sections: false
+toc: false
+anchor-sections: false
+---
+
+Статьи и наглядные объяснения, к которым можно обращаться во время курса и самостоятельной работы.
+
+```{=html}
+<a class="resource-preview" href="https://vas3k.blog/blog/machine_learning/" target="_blank" rel="noopener noreferrer" aria-labelledby="machine-learning-title" aria-describedby="machine-learning-description">
+  <span class="preview-site">vas3k.blog <span aria-hidden="true">↗</span></span>
+  <h2 id="machine-learning-title">Машинное обучение для людей</h2>
+  <p id="machine-learning-description">Наглядное введение в машинное обучение: основные подходы, примеры задач и карта алгоритмов.</p>
+  <img src="../../images/materials/machine-learning.webp" alt="Карта направлений и алгоритмов машинного обучения из статьи Вастрика" width="500" height="255" loading="lazy">
+  <span class="preview-footer">Вастрик <span>Читать статью →</span></span>
+</a>
+```

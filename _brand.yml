@@ -1,6 +1,16 @@
+color:
+  palette:
+    violet: "#7622C9"
+    lilac: "#E7B9FF"
+    ink: "#19151F"
+  primary: violet
+  foreground: ink
+  background: "#F8F7FB"
+
 defaults:
   bootstrap:
     defaults:
-      navbar-bg: "#0B68FE"
+      navbar-bg: "#24112F"
       navbar-fg: white
-      navbar-hl: black
+      navbar-hl: "#E7B9FF"
+      link-color: "#7622C9"
