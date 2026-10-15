@@ -32,8 +32,9 @@ website:
 
 format:
   html:
-    theme: flatly
-    css: styles.css
+    theme:
+      - flatly
+      - styles.scss
     toc: true
 
 lang: ru-RU
