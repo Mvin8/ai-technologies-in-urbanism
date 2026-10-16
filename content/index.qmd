@@ -25,7 +25,7 @@ aliases:
 Изучаем возможности ИИ, разбираемся в технологиях и применяем их к задачам городской среды.
 
 ::: hero-actions
-[Смотреть лекции](lectures/lectures.qmd){.btn .btn-primary} [Начать практику](practice/practice-01.qmd){.btn .btn-outline-light}
+[Смотреть лекции](lectures/lectures.qmd){.btn .btn-primary} [Смотреть практики](practice/practices.qmd){.btn .btn-outline-light}
 :::
 ::::
 
@@ -92,6 +92,14 @@ aliases:
 ### [Перспективные методы ИИ](lectures/lecture-03.qmd){.topic-link}
 
 Новые направления искусственного интеллекта и возможности их применения.
+:::
+
+::: lecture-card
+[04 / Лекция]{.card-kicker}
+
+### [Вайбкодинг](lectures/lecture-04.qmd){.topic-link}
+
+Разработка с ИИ-агентом: постановка задачи, контекст проекта, инструменты и проверка результата.
 :::
 ::::::
 :::::::

@@ -11,7 +11,8 @@ website:
         text: О курсе
       - href: content/lectures/lectures.qmd
         text: Лекции
-      - sidebar:practice
+      - href: content/practice/practices.qmd
+        text: Практики
       - href: content/materials/materials.qmd
         text: Дополнительные материалы
     right:
@@ -20,15 +21,6 @@ website:
         aria-label: "Telegram Максима Натыкина"
         target: _blank
         rel: noopener
-  sidebar:
-    - id: practice
-      pinned: true
-      align: center
-      title: "Практикум"
-      style: docked
-      collapse-level: 2
-      contents:
-        - content/practice/practice-01.qmd
 
 format:
   html:

@@ -26,3 +26,9 @@ number-sections: false
 <iframe src="lecture-03.html" title="Лекция 3. Перспективные методы ИИ" style="width: 100%; aspect-ratio: 16 / 9; border: 0;" loading="lazy" allowfullscreen></iframe>
 
 [Открыть презентацию](lecture-03.qmd){target="_blank"}
+
+## Лекция 4. Вайбкодинг
+
+<iframe src="lecture-04.html" title="Лекция 4. Вайбкодинг" style="width: 100%; aspect-ratio: 16 / 9; border: 0;" loading="lazy" allowfullscreen></iframe>
+
+[Открыть презентацию](lecture-04.qmd){target="_blank"}
