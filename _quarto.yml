@@ -13,6 +13,8 @@ website:
         text: Лекции
       - href: content/practice/practices.qmd
         text: Практики
+      - href: content/homework/homework.qmd
+        text: Домашние задания
       - href: content/materials/materials.qmd
         text: Дополнительные материалы
     right:
