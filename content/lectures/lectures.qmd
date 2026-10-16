@@ -13,22 +13,22 @@ number-sections: false
 
 <iframe src="lecture-01.html" title="Лекция 1. Современный ИИ" style="width: 100%; aspect-ratio: 16 / 9; border: 0;" loading="lazy" allowfullscreen></iframe>
 
-[Открыть презентацию](lecture-01.qmd){target="_blank"}
+[Открыть презентацию](lecture-01.qmd){.btn .btn-primary target="_blank"}
 
 ## Лекция 2. Технологии ИИ
 
 <iframe src="lecture-02.html" title="Лекция 2. Технологии ИИ" style="width: 100%; aspect-ratio: 16 / 9; border: 0;" loading="lazy" allowfullscreen></iframe>
 
-[Открыть презентацию](lecture-02.qmd){target="_blank"}
+[Открыть презентацию](lecture-02.qmd){.btn .btn-primary target="_blank"}
 
 ## Лекция 3. Перспективные методы ИИ
 
 <iframe src="lecture-03.html" title="Лекция 3. Перспективные методы ИИ" style="width: 100%; aspect-ratio: 16 / 9; border: 0;" loading="lazy" allowfullscreen></iframe>
 
-[Открыть презентацию](lecture-03.qmd){target="_blank"}
+[Открыть презентацию](lecture-03.qmd){.btn .btn-primary target="_blank"}
 
 ## Лекция 4. Вайбкодинг
 
 <iframe src="lecture-04.html" title="Лекция 4. Вайбкодинг" style="width: 100%; aspect-ratio: 16 / 9; border: 0;" loading="lazy" allowfullscreen></iframe>
 
-[Открыть презентацию](lecture-04.qmd){target="_blank"}
+[Открыть презентацию](lecture-04.qmd){.btn .btn-primary target="_blank"}

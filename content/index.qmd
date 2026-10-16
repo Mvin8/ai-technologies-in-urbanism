@@ -120,6 +120,22 @@ aliases:
 ```
 ::::
 
+:::: practice-feature
+::: practice-copy
+[Практика 02]{.section-kicker}
+
+## Кварталы и метрики города: от данных к дашборду
+
+Составьте план исследования в OpenCode и поручите агенту подготовить кварталы, рассчитать показатели BlocksNet и собрать HTML-страницу с картой и дашбордом. Предварительное знание программирования не требуется.
+
+[Перейти к практике →](practice/practice-02.qmd){.btn .btn-primary}
+:::
+
+```{=html}
+<div class="practice-symbol" aria-hidden="true">02</div>
+```
+::::
+
 ::: materials-entry
 ### Продолжить знакомство с ИИ
 
