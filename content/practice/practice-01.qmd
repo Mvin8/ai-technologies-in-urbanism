@@ -28,6 +28,7 @@ code-copy: true
 |------------------------|------------------------|------------------------|
 | **Python** | Выполнение программ на Python | [python.org](https://www.python.org/) |
 | **Git** | Скачивание проектов и контроль изменений | [git-scm.com](https://git-scm.com/) |
+| **Make** | Создание окружения и установка зависимостей командами из Makefile | [gnu.org/software/make](https://www.gnu.org/software/make/) |
 | **Visual Studio Code** | Редактор кода и файлов проекта | [code.visualstudio.com](https://code.visualstudio.com/) |
 | **OpenCode** | ИИ-агент для работы с кодом | [opencode.ai](https://opencode.ai/) |
 | **Node.js + npm** | Установка OpenCode через npm | [nodejs.org](https://nodejs.org/en) |
@@ -281,6 +282,7 @@ https://github.com/vasilstar97/python-package-boilerplate.git
 |------------------|------------------------------------------------|
 | `README.rst`     | Описание проекта и примеры использования       |
 | `pyproject.toml` | Настройки Python-пакета и его зависимости      |
+| `Makefile`       | Готовые команды для окружения, установки и проверок |
 | `my_package/`    | Исходный код библиотеки                        |
 | `examples/`      | Примеры использования, включая блокнот Jupyter |
 | `tests/`         | Тесты                                          |
@@ -329,49 +331,77 @@ https://github.com/vasilstar97/python-package-boilerplate.git
 
 Далее создадим окружение проекта `.venv` и переключим интерпретатор на него.
 
-### Создайте виртуальное окружение
+### Создайте виртуальное окружение через Makefile
 
 Виртуальное окружение хранит библиотеки проекта отдельно от других Python-проектов. Назовём его `.venv`.
 
-**Все команды этого раздела выполняйте из папки `python-package-boilerplate`, где находится `pyproject.toml`.**
+В репозитории уже есть `Makefile` с готовыми командами. Порядок работы: **`make venv` → активация `.venv` → `make install-dev`**. Команда `make venv` создаёт окружение, но не активирует его.
+
+**Все команды этого раздела выполняйте из папки `python-package-boilerplate`, где находятся `Makefile` и `pyproject.toml`.**
 
 ::: panel-tabset
-#### Windows — терминал Command Prompt
+#### Windows — терминал Git Bash
 
-На панели терминала VS Code нажмите стрелку рядом с `+` и выберите **Command Prompt / Командная строка**. Если пункта нет, через **Terminal: Select Default Profile** в палитре команд выберите Command Prompt и создайте новый терминал.
+Сначала установите [Make через WinGet](https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ezwinports/make). В PowerShell выполните:
 
-``` bat
-py -3.12 -m venv .venv
-.venv\Scripts\activate.bat
+``` powershell
+winget install --id ezwinports.make --exact
 ```
 
-Если установлена другая версия, замените `-3.12` на её номер.
+Перезапустите VS Code. На панели терминала нажмите стрелку рядом с `+` и выберите **Git Bash** — он устанавливается вместе с Git for Windows. Если пункта нет, через **Terminal: Select Default Profile** в палитре команд выберите Git Bash и создайте новый терминал.
+
+Далее выполняйте команды в **Git Bash**. Укажите оболочку для команд Makefile и проверьте Make и Python:
+
+``` bash
+export SHELL=sh
+make --version
+python3 --version
+```
+
+Makefile использует команду `python3`. Она доступна при установке через **Python install manager** из шага 1; проверка должна показать Python **3.10 или новее**. Если команда не найдена или открывает Microsoft Store, проверьте установку менеджера и псевдоним `python3.exe` в настройках Windows «Управление псевдонимами выполнения приложений».
+
+Создайте окружение и активируйте его:
+
+``` bash
+make venv
+source .venv/Scripts/activate
+```
 
 #### macOS и Linux
 
+Проверьте, что Make установлен:
+
 ``` bash
-python3 -m venv .venv
+make --version
+```
+
+На **macOS** Make входит в Command Line Tools, установленные на шаге 2. Если команда не найдена, выполните `xcode-select --install`. На **Ubuntu, Debian и Linux Mint** установите Make командой `sudo apt install make`.
+
+Создайте окружение и активируйте его:
+
+``` bash
+make venv
 source .venv/bin/activate
 ```
 :::
 
 **Признак успеха:** появилась папка `.venv`; в начале строки терминала обычно отображается `(.venv)`.
 
-### Установите учебный пакет
+### Установите учебный пакет и зависимости для разработки
 
-После активации окружения — одинаково на всех системах:
+После активации окружения в **том же терминале** выполните — одинаково на всех системах:
 
 ``` bash
-python -m pip install --upgrade pip
-python -m pip install -e .
+make install-dev
 ```
 
-| Фрагмент команды | Что означает |
+Эта цель Makefile выполняет `pip install -e '.[dev]'`: устанавливает учебный пакет в режиме разработки и дополнительные зависимости из группы `dev` в `pyproject.toml`.
+
+| Команда | Что делает |
 |------------------------------------|------------------------------------|
-| `python -m pip` | Запускает установщик пакетов выбранного Python |
-| `install` | Устанавливает пакет |
-| `-e` | Включает режим разработки: изменения кода доступны без переустановки |
-| `.` | Использует проект в текущей папке |
+| `make venv` | Создаёт окружение `.venv` командой `python3 -m venv .venv` |
+| Команда активации для вашей ОС | Переключает текущий терминал на Python и pip из `.venv` |
+| `make install-dev` | Устанавливает пакет и dev-зависимости; изменения кода доступны без переустановки |
 
 Проверка:
 
@@ -513,10 +543,11 @@ python hello.py
 |------------------------------------|------------------------------------|
 | `command not found` или `not recognized` | Перезапустите терминал и VS Code; проверьте установку программы |
 | PowerShell блокирует `npm.ps1` или `opencode.ps1` | Используйте `npm.cmd` и `opencode.cmd` |
-| `.venv` не активируется в Windows | Откройте **Command Prompt** и выполните `.venv\Scripts\activate.bat` |
+| `make` не найден | Установите Make по инструкции шага 6 и перезапустите VS Code |
+| `.venv` не активируется в Windows | Откройте **Git Bash** и выполните `source .venv/Scripts/activate` |
 | Linux сообщает об отсутствии `venv` / `ensurepip` | Установите `python3-venv` и повторите создание окружения |
-| `pip install -e .` не находит Python-проект | Перейдите в папку с `pyproject.toml` |
-| `No module named my_package` | Активируйте `.venv` и повторите `python -m pip install -e .` |
+| `make` не находит Makefile или `install-dev` | Перейдите в корень учебного репозитория и проверьте наличие `Makefile` с целью `install-dev` |
+| `No module named my_package` | Активируйте `.venv` и повторите `make install-dev` |
 | VS Code сообщает, что папка репозитория уже существует | Откройте уже скачанный проект через **File → Open Folder**, либо выберите другую папку для клонирования |
 | `Repository not found` | Проверьте URL репозитория и доступность страницы в браузере |
 | OpenCode открыт, но модель не отвечает | Проверьте `/connect`, доступ к модели и условия провайдера |
@@ -532,8 +563,9 @@ python hello.py
 - [ ] OpenCode установлен, команда проверки показывает версию.
 - [ ] Расширение OpenCode (`sst-dev.opencode`) установлено и включено в VS Code.
 - [ ] Учебный репозиторий скачан и открыт отдельной папкой в VS Code.
-- [ ] Создано окружение `.venv` и выбран его интерпретатор.
-- [ ] Выполнена установка `python -m pip install -e .`.
+- [ ] Make установлен, `make --version` работает.
+- [ ] Командой `make venv` создано окружение `.venv`, оно активировано и выбран его интерпретатор.
+- [ ] Выполнена установка пакета и dev-зависимостей командой `make install-dev`.
 - [ ] Проверка импорта выводит «Проект готов к работе».
 - [ ] OpenCode подключён к модели и отвечает на вопрос о проекте.
 
