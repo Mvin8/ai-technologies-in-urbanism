@@ -340,7 +340,7 @@ https://github.com/vasilstar97/python-package-boilerplate.git
 **Все команды этого раздела выполняйте из папки `python-package-boilerplate`, где находятся `Makefile` и `pyproject.toml`.**
 
 ::: panel-tabset
-#### Windows — терминал Git Bash
+#### Windows — терминал PowerShell
 
 Сначала установите [Make через WinGet](https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/ezwinports/make). В PowerShell выполните:
 
@@ -348,12 +348,12 @@ https://github.com/vasilstar97/python-package-boilerplate.git
 winget install --id ezwinports.make --exact
 ```
 
-Перезапустите VS Code. На панели терминала нажмите стрелку рядом с `+` и выберите **Git Bash** — он устанавливается вместе с Git for Windows. Если пункта нет, через **Terminal: Select Default Profile** в палитре команд выберите Git Bash и создайте новый терминал.
+Перезапустите VS Code. На панели терминала нажмите стрелку рядом с `+` и выберите **PowerShell**. Если пункта нет, через **Terminal: Select Default Profile** в палитре команд выберите PowerShell и создайте новый терминал.
 
-Далее выполняйте команды в **Git Bash**. Укажите оболочку для команд Makefile и проверьте Make и Python:
+Далее выполняйте команды в **PowerShell**. Укажите оболочку для команд Makefile и проверьте Make и Python:
 
-``` bash
-export SHELL=sh
+``` powershell
+$env:SHELL = "powershell.exe"
 make --version
 python3 --version
 ```
@@ -362,9 +362,9 @@ Makefile использует команду `python3`. Она доступна 
 
 Создайте окружение и активируйте его:
 
-``` bash
+``` powershell
 make venv
-source .venv/Scripts/activate
+.venv\Scripts\Activate.ps1
 ```
 
 #### macOS и Linux
@@ -544,7 +544,7 @@ python hello.py
 | `command not found` или `not recognized` | Перезапустите терминал и VS Code; проверьте установку программы |
 | PowerShell блокирует `npm.ps1` или `opencode.ps1` | Используйте `npm.cmd` и `opencode.cmd` |
 | `make` не найден | Установите Make по инструкции шага 6 и перезапустите VS Code |
-| `.venv` не активируется в Windows | Откройте **Git Bash** и выполните `source .venv/Scripts/activate` |
+| `.venv` не активируется в Windows | Откройте **PowerShell** и выполните `.venv\Scripts\Activate.ps1` |
 | Linux сообщает об отсутствии `venv` / `ensurepip` | Установите `python3-venv` и повторите создание окружения |
 | `make` не находит Makefile или `install-dev` | Перейдите в корень учебного репозитория и проверьте наличие `Makefile` с целью `install-dev` |
 | `No module named my_package` | Активируйте `.venv` и повторите `make install-dev` |

@@ -44,13 +44,13 @@ code-copy: true
 
 ### Windows
 
-В терминале VS Code выберите **Command Prompt / Командная строка**, как в [практике 1](practice-01.qmd#setup).
+В терминале VS Code выберите **PowerShell**, как в [практике 1](practice-01.qmd#setup).
 
-``` bat
-.venv\Scripts\activate.bat
+``` powershell
+.venv\Scripts\Activate.ps1
 ```
 
-``` bat
+``` powershell
 pip install blocksnet[ipynb,torch]==1.0.0.a9 -q
 ```
 
