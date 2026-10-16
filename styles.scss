@@ -12,6 +12,46 @@ body {
   background: #f8f7fb;
 }
 
+.opencode-prompt {
+  margin: 1rem 0 1.5rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--course-border);
+  border-left: 4px solid var(--course-purple);
+  border-radius: .5rem;
+  background: #f0e7fa;
+}
+
+.opencode-prompt > p:first-child {
+  margin: 0 0 .75rem;
+  color: var(--course-purple);
+  font-weight: 700;
+}
+
+.opencode-prompt .code-copy-outer-scaffold {
+  margin-bottom: 0;
+}
+
+.opencode-prompt pre {
+  margin: 0;
+  padding-right: 2.5rem;
+  background: #fff;
+}
+
+.opencode-prompt pre,
+.opencode-prompt pre code {
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+.opencode-prompt pre code > span {
+  display: inline;
+}
+
+.opencode-prompt .code-copy-button {
+  opacity: 1;
+}
+
 .navbar {
   border-bottom: 1px solid rgb(231 185 255 / 15%);
 }

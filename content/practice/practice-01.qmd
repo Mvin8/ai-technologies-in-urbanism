@@ -175,7 +175,7 @@ VS Code — редактор, в котором вы будете открыва
 Для Fedora используется пакет `.rpm`. Другие варианты описаны в [официальной инструкции для Linux](https://code.visualstudio.com/docs/setup/linux).
 :::
 
-**Русский интерфейс и расширение Python настроим после открытия учебного репозитория — в разделе 6.**
+**Русский интерфейс и расширения Python и OpenCode настроим после открытия учебного репозитория — в разделе 6.**
 
 ## 4. Установка OpenCode {#opencode-install}
 
@@ -400,6 +400,19 @@ python -c "import my_package; print('Проект готов к работе')"
 
 > **При следующем занятии:** заново создавать `.venv` не нужно. Откройте проект и активируйте окружение соответствующей командой активации из этого раздела. В новом терминале активация может потребоваться повторно.
 
+### Установите расширение OpenCode в VS Code {#opencode-extension}
+
+Расширение позволяет открывать OpenCode прямо в редакторе и передавать ему выбранный файл или фрагмент кода. Для его работы нужен сам OpenCode, установленный на шаге 4.
+
+1.  Откройте **Extensions / Расширения**: `Ctrl + Shift + X` на Windows и Linux, `Cmd + Shift + X` на macOS.
+2.  Введите в поиске `@id:sst-dev.opencode`. Это точный идентификатор [расширения OpenCode](https://marketplace.visualstudio.com/items?itemName=sst-dev.opencode).
+3.  Нажмите **Install / Установить**. Если расширение уже установлено и включено, переходите дальше.
+4.  Если VS Code предложит перезагрузить окно, выполните это действие.
+
+**Проверка:** на странице расширения вместо кнопки установки доступны **Disable / Отключить** и **Uninstall / Удалить**. Если видите **Enable / Включить**, нажмите её.
+
+При запуске `opencode` во встроенном терминале расширение также может установиться автоматически. Оба способа описаны в [документации OpenCode для VS Code](https://opencode.ai/docs/ide/).
+
 ## 7. Запуск OpenCode {#opencode-start}
 
 В терминале VS Code, находясь в папке проекта, выполните:
@@ -517,6 +530,7 @@ python hello.py
 - [ ] VS Code установлен, русский интерфейс включён.
 - [ ] Расширение Python от Microsoft установлено, интерпретатор проекта выбран.
 - [ ] OpenCode установлен, команда проверки показывает версию.
+- [ ] Расширение OpenCode (`sst-dev.opencode`) установлено и включено в VS Code.
 - [ ] Учебный репозиторий скачан и открыт отдельной папкой в VS Code.
 - [ ] Создано окружение `.venv` и выбран его интерпретатор.
 - [ ] Выполнена установка `python -m pip install -e .`.
@@ -538,6 +552,7 @@ python hello.py
 - [VS Code: установка на Linux](https://code.visualstudio.com/docs/setup/linux)
 - [Node.js: загрузка](https://nodejs.org/en/download)
 - [OpenCode: установка и начало работы](https://opencode.ai/docs/)
+- [OpenCode: расширение для VS Code](https://opencode.ai/docs/ide/)
 - [Описание учебного проекта](https://github.com/vasilstar97/python-package-boilerplate/blob/main/README.rst)
 - [Зависимости и требования проекта](https://github.com/vasilstar97/python-package-boilerplate/blob/main/pyproject.toml)
 
