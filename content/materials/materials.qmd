@@ -12,6 +12,7 @@ anchor-sections: false
   <span class="preview-site">PDF <span aria-hidden="true">↗</span></span>
   <h2 id="brief-title">Бриф: что это такое</h2>
   <p id="brief-description">Зачем нужен бриф, чем он отличается от технического задания и как описать цели, этапы, данные и требования проекта.</p>
+  <img src="../../images/materials/brief.png" alt="Сравнение брифа и технического задания на первой странице PDF" width="840" height="510" loading="lazy">
   <span class="preview-footer">Подготовка проекта <span>Открыть PDF →</span></span>
 </a>
 
