@@ -5,9 +5,16 @@ toc: false
 anchor-sections: false
 ---
 
-Статьи, наглядные объяснения и полезные сервисы, к которым можно обращаться во время курса и самостоятельной работы.
+Статьи, памятки, наглядные объяснения и полезные сервисы, к которым можно обращаться во время курса и самостоятельной работы.
 
 ```{=html}
+<a class="resource-preview" href="brief.pdf" target="_blank" rel="noopener noreferrer" aria-labelledby="brief-title" aria-describedby="brief-description">
+  <span class="preview-site">PDF <span aria-hidden="true">↗</span></span>
+  <h2 id="brief-title">Бриф: что это такое</h2>
+  <p id="brief-description">Зачем нужен бриф, чем он отличается от технического задания и как описать цели, этапы, данные и требования проекта.</p>
+  <span class="preview-footer">Подготовка проекта <span>Открыть PDF →</span></span>
+</a>
+
 <a class="resource-preview" href="https://vas3k.blog/blog/machine_learning/" target="_blank" rel="noopener noreferrer" aria-labelledby="machine-learning-title" aria-describedby="machine-learning-description">
   <span class="preview-site">vas3k.blog <span aria-hidden="true">↗</span></span>
   <h2 id="machine-learning-title">Машинное обучение для людей</h2>
