@@ -32,3 +32,9 @@ number-sections: false
 <iframe src="lecture-04.html" title="Лекция 4. Вайбкодинг" style="width: 100%; aspect-ratio: 16 / 9; border: 0;" loading="lazy" allowfullscreen></iframe>
 
 [Открыть презентацию](lecture-04.qmd){.btn .btn-primary target="_blank"}
+
+## Лекция 5. Геоаналитика и ИИ
+
+<iframe src="lecture-05.html" title="Лекция 5. Геоаналитика и ИИ" style="width: 100%; aspect-ratio: 16 / 9; border: 0;" loading="lazy" allowfullscreen></iframe>
+
+[Открыть презентацию](lecture-05.qmd){.btn .btn-primary target="_blank"}
