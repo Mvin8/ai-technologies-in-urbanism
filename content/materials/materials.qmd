@@ -27,7 +27,11 @@ anchor-sections: false
   <img src="../../images/materials/machine-learning.webp" alt="Карта направлений и алгоритмов машинного обучения из статьи Вастрика" width="500" height="255" loading="lazy">
   <span class="preview-footer">Вастрик <span>Читать статью →</span></span>
 </a>
+```
 
+## Инструменты и сервисы
+
+```{=html}
 <a class="resource-preview" href="https://learn.chatgpt.com/docs/codex/ide#getting-started" target="_blank" rel="noopener noreferrer" aria-labelledby="codex-ide-title" aria-describedby="codex-ide-description">
   <span class="preview-site">learn.chatgpt.com <span aria-hidden="true">↗</span></span>
   <h2 id="codex-ide-title">Codex в редакторе кода: начало работы</h2>
@@ -35,11 +39,7 @@ anchor-sections: false
   <img src="../../images/materials/codex-ide.png" alt="Превью официального руководства Codex IDE extension на ChatGPT Learn" width="1200" height="630" loading="lazy">
   <span class="preview-footer">Документация OpenAI <span>Открыть руководство →</span></span>
 </a>
-```
 
-## Инструменты и сервисы
-
-```{=html}
 <a class="resource-preview" href="https://opencode.ai/" target="_blank" rel="noopener noreferrer" aria-labelledby="opencode-title" aria-describedby="opencode-description">
   <span class="preview-site">opencode.ai <span aria-hidden="true">↗</span></span>
   <h2 id="opencode-title">OpenCode</h2>
@@ -80,6 +80,8 @@ anchor-sections: false
 ::: {.panel-tabset}
 
 ### Библиотека
+
+![](../../images/materials/urbanomy.png){fig-alt="Иллюстрация Urbanomy: городские кварталы, диаграмма и знак доллара" width=660}
 
 Urbanomy объединяет инструменты прогнозирования стоимости земли, сравнения сценариев развития кварталов и расчёта инвестиционных показателей. В репозитории доступны исходный код, примеры и инструкции.
 
