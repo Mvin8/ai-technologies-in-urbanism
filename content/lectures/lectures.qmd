@@ -38,3 +38,9 @@ number-sections: false
 <iframe src="lecture-05.html" title="Лекция 5. Геоаналитика и ИИ" style="width: 100%; aspect-ratio: 16 / 9; border: 0;" loading="lazy" allowfullscreen></iframe>
 
 [Открыть презентацию](lecture-05.qmd){.btn .btn-primary target="_blank"}
+
+## Лекция 6. Инструменты ИИ для научных исследований
+
+<iframe src="lecture-06.html" title="Лекция 6. Инструменты ИИ для научных исследований" style="width: 100%; aspect-ratio: 16 / 9; border: 0;" loading="lazy" allowfullscreen></iframe>
+
+[Открыть презентацию](lecture-06.qmd){.btn .btn-primary target="_blank"}

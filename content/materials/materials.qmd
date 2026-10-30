@@ -1,11 +1,15 @@
 ---
 title: "Дополнительные материалы"
 number-sections: false
-toc: false
+toc: true
+toc-title: "Содержание"
+toc-depth: 2
 anchor-sections: false
 ---
 
 Статьи, памятки, наглядные объяснения и полезные сервисы, к которым можно обращаться во время курса и самостоятельной работы.
+
+## Статьи и документы
 
 ```{=html}
 <a class="resource-preview" href="brief.pdf" target="_blank" rel="noopener noreferrer" aria-labelledby="brief-title" aria-describedby="brief-description">
@@ -22,6 +26,14 @@ anchor-sections: false
   <p id="machine-learning-description">Наглядное введение в машинное обучение: основные подходы, примеры задач и карта алгоритмов.</p>
   <img src="../../images/materials/machine-learning.webp" alt="Карта направлений и алгоритмов машинного обучения из статьи Вастрика" width="500" height="255" loading="lazy">
   <span class="preview-footer">Вастрик <span>Читать статью →</span></span>
+</a>
+
+<a class="resource-preview" href="https://learn.chatgpt.com/docs/codex/ide#getting-started" target="_blank" rel="noopener noreferrer" aria-labelledby="codex-ide-title" aria-describedby="codex-ide-description">
+  <span class="preview-site">learn.chatgpt.com <span aria-hidden="true">↗</span></span>
+  <h2 id="codex-ide-title">Codex в редакторе кода: начало работы</h2>
+  <p id="codex-ide-description">Официальное руководство OpenAI: установка Codex в редакторе кода, вход в аккаунт и первый диалог по проекту.</p>
+  <img src="../../images/materials/codex-ide.png" alt="Превью официального руководства Codex IDE extension на ChatGPT Learn" width="1200" height="630" loading="lazy">
+  <span class="preview-footer">Документация OpenAI <span>Открыть руководство →</span></span>
 </a>
 ```
 
@@ -60,3 +72,37 @@ anchor-sections: false
   <span class="preview-footer">Сравнение моделей <span>Открыть рейтинг →</span></span>
 </a>
 ```
+
+## Urbanomy {#urbanomy}
+
+Библиотека для пространственной и экономической оценки городских территорий. Здесь собраны исходный код, плагин для QGIS и данные для знакомства с инструментом.
+
+::: {.panel-tabset}
+
+### Библиотека
+
+Urbanomy объединяет инструменты прогнозирования стоимости земли, сравнения сценариев развития кварталов и расчёта инвестиционных показателей. В репозитории доступны исходный код, примеры и инструкции.
+
+[Urbanomy на GitHub · ветка dev](https://github.com/IDUclub/Urbanomy/tree/dev){.btn .btn-primary target="_blank" rel="noopener noreferrer"}
+
+### Плагин для QGIS
+
+Плагин Urbanomy позволяет рассчитывать стоимость земли, оптимизировать параметры квартала и оценивать инвестиционные показатели в QGIS. Переносимый архив включает плагин, расчётное ядро и модель CatBoost.
+
+[Скачать плагин для QGIS · ZIP](downloads/urbanomy_qgis_portable.zip){.btn .btn-primary download="urbanomy_qgis_portable.zip"}
+
+Как начать:
+
+1. В QGIS откройте **Модули → Управление и установка модулей → Установить из ZIP**, выберите скачанный архив и включите **Urbanomy**.
+2. Откройте **Urbanomy → Установка** и настройте вычислительное окружение через встроенный мастер. Для расчётов нужен внешний **Python 3.11**, для установки зависимостей — интернет.
+3. Скачайте пример данных на соседней вкладке и добавьте GeoJSON в QGIS как векторный слой. Модель CatBoost из архива плагин подставит автоматически.
+
+### Пример данных
+
+GeoJSON с геометрией 351 квартала и показателями: землепользование, площадь застройки, население, плотность, морфотип и доступность территории. Файл можно открыть в QGIS и использовать для знакомства с Urbanomy.
+
+[Скачать пример данных · GeoJSON](downloads/blocks_agg_with_indicators.geojson){.btn .btn-primary download="blocks_agg_with_indicators.geojson"}
+
+Для подготовки кварталов и расчёта показателей для своей территории используйте [BlocksNet](https://github.com/aimclub/blocksnet). Работа с этой библиотекой разобрана в [практическом занятии 2](../practice/practice-02.qmd).
+
+:::
