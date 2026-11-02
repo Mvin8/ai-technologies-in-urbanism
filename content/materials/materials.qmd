@@ -75,7 +75,7 @@ anchor-sections: false
 
 ## Urbanomy {#urbanomy}
 
-Библиотека для пространственной и экономической оценки городских территорий. Здесь собраны исходный код, плагин для QGIS и данные для знакомства с инструментом.
+Библиотека для пространственной и экономической оценки городских территорий. Здесь собраны исходный код, обученная модель, плагин для QGIS и данные для знакомства с инструментом.
 
 ::: {.panel-tabset}
 
@@ -86,6 +86,10 @@ anchor-sections: false
 Urbanomy объединяет инструменты прогнозирования стоимости земли, сравнения сценариев развития кварталов и расчёта инвестиционных показателей. В репозитории доступны исходный код, примеры и инструкции.
 
 [Urbanomy на GitHub · ветка dev](https://github.com/IDUclub/Urbanomy/tree/dev){.btn .btn-primary target="_blank" rel="noopener noreferrer"}
+
+Обученная модель CatBoost для прогнозирования стоимости земли доступна отдельным файлом в формате `.cbm` для использования в примерах Urbanomy.
+
+[Скачать обученную модель · CBM](downloads/catboost_land_value_no_services.cbm){.btn .btn-outline-secondary download="catboost_land_value_no_services.cbm"}
 
 ### Плагин для QGIS
 
