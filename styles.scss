@@ -365,6 +365,12 @@ button:focus-visible {
   color: #b58ad7;
 }
 
+.practice-symbol svg {
+  display: block;
+  width: 5rem;
+  height: 5rem;
+}
+
 .materials-entry {
   margin-top: 2rem;
   padding: 1.5rem .25rem;

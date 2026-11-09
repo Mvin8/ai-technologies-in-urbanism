@@ -148,7 +148,12 @@ aliases:
 :::
 
 ```{=html}
-<div class="practice-symbol" aria-hidden="true">02</div>
+<div class="practice-symbol" aria-hidden="true">
+  <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+    <path d="M8 8h26v26H8z M46 8h26v26H46z M8 46h26v26H8z"/>
+    <path d="M47 71V58 M59 71V47 M71 71V39"/>
+  </svg>
+</div>
 ```
 ::::
 
@@ -164,7 +169,13 @@ aliases:
 :::
 
 ```{=html}
-<div class="practice-symbol" aria-hidden="true">03</div>
+<div class="practice-symbol" aria-hidden="true">
+  <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+    <path d="M26 70V31l14-12 14 12v39 M26 40H9v30h62V40H54 M40 19V7h15l-3 5 3 5H40"/>
+    <path d="M35 70V55h10v15 M17 50v4 M17 61v3 M63 50v4 M63 61v3"/>
+    <circle cx="40" cy="39" r="4"/>
+  </svg>
+</div>
 ```
 ::::
 
