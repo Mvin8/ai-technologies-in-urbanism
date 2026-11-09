@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+  <rect width="1200" height="600" fill="#f5f0fa"/>
+  <g font-family="Arial, sans-serif">
+    <text x="64" y="72" fill="#724395" font-size="22" letter-spacing="3">ПУБЛИКАЦИЯ РАЗРАБОТОК</text>
+    <text x="60" y="161" fill="#2c2037" font-size="64" font-weight="700">Проект готов.</text>
+    <text x="60" y="238" fill="#2c2037" font-size="64" font-weight="700">Как его опубликовать?</text>
+    <rect x="64" y="306" width="440" height="140" rx="16" fill="#fff" stroke="#dfd3e9" stroke-width="2"/>
+    <path d="M89 336l27-12 27 12 27-12v64l-27 12-27-12-27 12z M116 324v64 M143 336v64" fill="none" stroke="#724395" stroke-width="3" stroke-linejoin="round"/>
+    <text x="197" y="361" fill="#2c2037" font-size="29" font-weight="700">Карта</text>
+    <text x="197" y="403" fill="#6c6175" font-size="25">Готовые данные → сайт</text>
+    <rect x="536" y="306" width="600" height="140" rx="16" fill="#fff" stroke="#dfd3e9" stroke-width="2"/>
+    <path d="M587 343l-20 20 20 20 M613 343l20 20-20 20 M608 332l-16 62" fill="none" stroke="#724395" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="665" y="361" fill="#2c2037" font-size="29" font-weight="700">Python-приложение</text>
+    <text x="665" y="403" fill="#6c6175" font-size="25">Расчеты → сервер</text>
+    <path d="M64 494h1072" stroke="#dfd3e9" stroke-width="2"/>
+    <text x="64" y="550" fill="#724395" font-size="27">Демо + код + описание метода</text>
+    <text x="1136" y="551" text-anchor="end" fill="#724395" font-size="36">↗</text>
+  </g>
+</svg>

@@ -20,6 +20,14 @@ anchor-sections: false
   <span class="preview-footer">Подготовка проекта <span>Открыть PDF →</span></span>
 </a>
 
+<a class="resource-preview" id="publication" href="publication.html" aria-labelledby="publication-title" aria-describedby="publication-description">
+  <span class="preview-site">Памятка курса <span aria-hidden="true">↗</span></span>
+  <h2 id="publication-title">Публикация разработок</h2>
+  <p id="publication-description">Как опубликовать карту или Python-приложение: выбор площадки, запуск демо, проверки перед показом и продвижение проекта.</p>
+  <img src="../../images/materials/publication.svg" alt="Проект готов. Как его опубликовать? Карта, Python-приложение и рабочая ссылка" width="1200" height="600" loading="lazy">
+  <span class="preview-footer">От проекта к рабочей ссылке <span>Читать памятку →</span></span>
+</a>
+
 <a class="resource-preview" href="https://vas3k.blog/blog/machine_learning/" target="_blank" rel="noopener noreferrer" aria-labelledby="machine-learning-title" aria-describedby="machine-learning-description">
   <span class="preview-site">vas3k.blog <span aria-hidden="true">↗</span></span>
   <h2 id="machine-learning-title">Машинное обучение для людей</h2>
